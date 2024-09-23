@@ -1,0 +1,21 @@
+meta {
+  name: Register a product
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/registers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Rodrigo Andrade",
+    "email": "rodriggopda@gmail.com",
+    "phone": "44997348104",
+    "invoiceNumber": "000000003",
+    "serialNumber": "AA000003"  
+  }
+}
